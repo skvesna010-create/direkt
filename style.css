@@ -225,3 +225,52 @@ select.pjs{background:#22272A;color:#fff;border:1px solid rgba(255,255,255,.12);
 .chip.sm{padding:7px 13px;font-size:13px}
 small.pre{white-space:pre-line}
 @media (max-width:860px){.pj{display:flex;border:0;padding:0;margin:0}.pjl small{display:none}select.pjs{width:auto;max-width:170px}}
+
+/* ===== аккуратный интерфейс v2 ===== */
+.ic{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.btn .ic{width:16px;height:16px}
+.side{width:248px;padding:14px 12px 12px;gap:0;overflow-y:auto;scrollbar-width:thin}
+.app{grid-template-columns:248px minmax(0,1fr)}
+.lg{padding:2px 6px 14px}
+.pj{padding:0 2px 12px;margin-bottom:6px;border-bottom:1px solid rgba(255,255,255,.07)}
+.nav{display:flex;flex-direction:column;gap:1px}
+.ng{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#7E878B;font-weight:700;padding:14px 10px 6px}
+.side .ni{display:flex;align-items:center;gap:11px;width:100%;border:0;background:none;color:#C9CFD2;text-align:left;padding:8px 10px;border-radius:9px;font-size:13.5px;font-weight:600;line-height:1.2;min-height:36px}
+.side .ni .ic{color:#8F999D}
+.side .ni:hover{background:rgba(255,255,255,.06);color:#fff}.side .ni:hover .ic{color:#fff}
+.side .ni.on{background:var(--g2);color:#fff}.side .ni.on .ic{color:#fff}
+.navf{display:flex;flex-direction:column;gap:1px;border-top:1px solid rgba(255,255,255,.07);padding-top:8px;margin-top:10px}
+.side .ni.sm{font-size:12.5px;min-height:32px;padding:6px 10px;color:#9AA3A7}
+.side .sv{padding:8px 10px 0;font-size:11px;color:#6F787C}
+.side .hm,.side .out,.side .pja{display:none}
+.rbic{display:inline-grid;place-items:center;width:32px;height:32px;min-width:32px;padding:0;border-radius:9px;margin-right:10px}.rbic .ic{width:18px;height:18px}
+.card h3{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:16px;line-height:1.3}
+.card h3 .sp{flex:1}
+.card{padding:20px 22px}
+.hint{font-size:13.5px;line-height:1.55}
+.bar{display:flex;align-items:center;gap:12px}
+.mnu{display:none;border:0;background:none;padding:6px;margin-left:-6px;color:var(--ink);border-radius:8px}.mnu .ic{width:22px;height:22px}
+.scrim{display:none}
+/* поля: ровные ряды даже при подписях в 2 строки */
+.grid2,.grid3,.grid4{align-items:start}
+@supports (grid-template-rows:subgrid){
+  .grid2>.f,.grid3>.f,.grid4>.f{grid-row:span 3;display:grid;grid-template-rows:subgrid;row-gap:5px}
+  .grid2>.f>.fl,.grid3>.f>.fl,.grid4>.f>.fl{align-self:end}
+}
+.fl{line-height:1.3}
+.f>small{margin-top:-1px}
+@media (max-width:860px){
+  .app{display:block}
+  .side{position:fixed;left:0;top:0;bottom:0;height:100vh;width:min(290px,86vw);flex-direction:column;overflow-y:auto;transform:translateX(-102%);transition:transform .22s ease;z-index:60;padding:14px 12px}
+  .lg,.sp,.sv{display:flex}.sv{display:block}
+  .side button{white-space:normal;background:none}
+  .side .ni{background:none;font-size:14.5px;min-height:42px}
+  .pj{display:grid;border-bottom:1px solid rgba(255,255,255,.07);padding:0 2px 12px;margin-bottom:6px}.pjl small{display:block}select.pjs{width:100%;max-width:none}
+  body.nav .side{transform:none;box-shadow:0 0 60px rgba(0,0,0,.5)}
+  body.nav .scrim{display:block;position:fixed;inset:0;background:rgba(10,12,13,.45);z-index:50}
+  .mnu{display:inline-grid;place-items:center}
+  .bar{position:sticky;top:0;z-index:40;background:var(--bg)}
+  .card{padding:16px}
+}
+.hb{display:flex;align-items:center;gap:10px}.btn.huge .ic{width:20px;height:20px}
+.card h3>.ic{color:var(--g2)}
