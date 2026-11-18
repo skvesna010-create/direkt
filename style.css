@@ -274,3 +274,6 @@ small.pre{white-space:pre-line}
 }
 .hb{display:flex;align-items:center;gap:10px}.btn.huge .ic{width:20px;height:20px}
 .card h3>.ic{color:var(--g2)}
+
+.gate-f{display:block;margin-top:14px;font-size:13px;color:var(--mut,#667);text-decoration:none}.gate-f:hover{color:var(--g)}
+.gate[hidden]{display:none}
