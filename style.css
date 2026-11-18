@@ -174,8 +174,8 @@ body.lgn{min-height:100vh;display:grid;place-items:center;background:radial-grad
 .gate-m{width:84px;height:84px;margin:0 auto 4px}.gate-m svg{width:100%;height:100%}
 .gate h1{font-size:24px;letter-spacing:.06em}.gate h1 span{color:var(--g2)}
 .gate p{margin:0;color:var(--muted);font-size:14px}
-.gate input[type=password]{height:50px;border-radius:12px;border:1.5px solid var(--line);padding:0 16px;font:inherit;font-size:16px}
-.gate input[type=password]:focus{outline:none;border-color:var(--g)}
+.gate input[type=password],.gate input[type=text]{width:100%;height:50px;border-radius:12px;border:1.5px solid var(--line);padding:0 16px;font:inherit;font-size:16px}
+.gate input:focus{outline:none;border-color:var(--g)}
 .gate .chk{justify-content:center;font-weight:600;color:var(--muted)}
 .gate .btn{height:50px;font-size:16px}
 .gate-e{color:var(--red);font-weight:700;min-height:20px}
