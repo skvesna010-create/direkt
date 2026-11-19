@@ -429,3 +429,5 @@ select{height:32px;padding:0 8px;border-radius:7px;border-width:1px;font-size:13
 .avq{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.avqi{font-size:13px;padding:5px 9px;border:1px solid var(--line,#dfe3df);border-radius:8px;text-decoration:none;color:inherit}.avqi.ok{background:#d6f2e2;border-color:#9fd8b8;color:#0a6b39}
 .avth{width:56px;height:42px;object-fit:cover;border-radius:4px;display:block}
 .avcov{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}.avcv{text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:4px}.avcv img,.avnoimg{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;background:#eef1ee}.avnoimg{display:flex;align-items:center;justify-content:center;color:#999}.avcv b{font-size:13px}.avcv small{color:#777}
+.avfacts{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:6px;margin:8px 0}
+.avfact{display:flex;align-items:center;gap:8px;padding:7px 10px;border:1px solid var(--line,#dfe3df);border-radius:8px;cursor:pointer;font-size:14px}.avfact.on,.avfact:has(input:checked){background:#eef8f2;border-color:#9fd8b8}.avfact input[type=number]{padding:3px 6px}
