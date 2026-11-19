@@ -395,3 +395,11 @@ select{height:32px;padding:0 8px;border-radius:7px;border-width:1px;font-size:13
 .cl-x{border:1px solid var(--line);background:#fff;color:var(--muted);cursor:pointer;font-size:13px;line-height:1;width:20px;height:20px;border-radius:6px;padding:0;flex:none}.cl-x:hover{color:var(--red)}
 .cl-p .muted{margin-left:auto}
 .cl-p>span:first-child{flex:1;min-width:0}
+.mlist{gap:6px}
+.mrow{border:1px solid var(--line);border-radius:9px}
+.mrow>summary{display:flex;align-items:center;gap:8px;padding:6px 10px;cursor:pointer;list-style:none;font-size:13px;min-width:0}
+.mrow>summary::-webkit-details-marker{display:none}
+.mrow>summary b{flex:none}.mrow .mprev{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px}
+.mrow.off{opacity:.5}.mrow .mbody{padding:4px 10px 10px;display:grid;gap:8px;border-top:1px solid var(--line)}
+.chip.r{background:rgba(220,60,60,.12);border-color:rgba(220,60,60,.5)}
+.card.mlist{display:flex;flex-direction:column;gap:6px;max-height:none;overflow:visible;padding:13px 15px}.card.mlist>h3{margin:0}
