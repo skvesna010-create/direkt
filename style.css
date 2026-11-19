@@ -419,3 +419,9 @@ select{height:32px;padding:0 8px;border-radius:7px;border-width:1px;font-size:13
 .nrow{display:grid;grid-template-columns:1.4fr 1fr 1.6fr auto;gap:8px;align-items:center;padding:6px 0;border-top:1px solid var(--line,#e6e6e6)}.nrow.off{opacity:.5}
 .issues .bad,.muted .bad{color:#c0392b}.issues .warn{color:#b9770e}.issues .tip{color:#666}
 @media(max-width:760px){.avp,.nrow{grid-template-columns:1fr}}
+.avg{display:grid;grid-template-columns:1.6fr 1.2fr 1.2fr 1.3fr auto;gap:10px;align-items:center;padding:8px 0;border-top:1px solid var(--line,#e6e6e6)}.avg small{display:block}
+.avsteps{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:12px}.avsteps select{max-width:220px}
+.avs{border:1px solid var(--line,#dfe3df);background:var(--card,#fff);border-radius:8px;padding:6px 11px;font:inherit;font-size:13px;cursor:pointer;color:inherit}.avs.ok{color:#0a8a4a}.avs.on{background:#0a8a4a;color:#fff;border-color:#0a8a4a}
+.avchips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.avchip{padding:3px 9px;border-radius:12px;background:#eef1ee;font-size:13px}.avchip.on{background:#d6f2e2;color:#0a6b39;font-weight:600}
+.avkl{max-height:420px;overflow:auto}
+@media(max-width:760px){.avg{grid-template-columns:1fr}}
