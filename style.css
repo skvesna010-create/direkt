@@ -409,3 +409,13 @@ select{height:32px;padding:0 8px;border-radius:7px;border-width:1px;font-size:13
 .rb-l{display:grid;grid-template-columns:86px 96px minmax(0,1fr) auto;gap:8px;align-items:center;font-size:12.5px;padding:3px 0;border-bottom:1px solid var(--line)}
 .rb-l .badge{justify-self:start}
 .rb-api .chips label.chip{display:inline-flex;align-items:center;gap:5px}
+/* Авито */
+.ng.nga{color:#0a8a4a}
+.avp{display:grid;grid-template-columns:minmax(150px,1.1fr) 2fr 120px auto auto;gap:8px;align-items:center;padding:7px 0;border-top:1px solid var(--line,#e6e6e6)}
+.avp input{padding:5px 8px}
+.avd{font-family:inherit;line-height:1.45}
+.avph{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.avph img{width:110px;height:82px;object-fit:cover;border-radius:6px}
+.drop{border:2px dashed var(--line,#cfd6cf);border-radius:10px;padding:18px;text-align:center;cursor:pointer;margin:6px 0}.drop:hover{border-color:#0a8a4a}
+.nrow{display:grid;grid-template-columns:1.4fr 1fr 1.6fr auto;gap:8px;align-items:center;padding:6px 0;border-top:1px solid var(--line,#e6e6e6)}.nrow.off{opacity:.5}
+.issues .bad,.muted .bad{color:#c0392b}.issues .warn{color:#b9770e}.issues .tip{color:#666}
+@media(max-width:760px){.avp,.nrow{grid-template-columns:1fr}}
