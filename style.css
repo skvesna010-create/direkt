@@ -386,3 +386,6 @@ select{height:32px;padding:0 8px;border-radius:7px;border-width:1px;font-size:13
 .th-r small{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 @media (max-width:900px){.th-r{grid-template-columns:minmax(0,1fr) 80px 36px}.th-r small{display:none}}
 .tw{overflow:auto}td.sm{font-size:11.5px;max-width:340px}
+.usp-r{grid-template-columns:150px minmax(0,1fr) 300px;align-items:start}
+.usp-r .usp-l{padding-top:7px}.usp-c{display:block;margin-top:2px;font-size:11px;line-height:1.35}
+.usp-tag{padding-top:6px;display:flex;flex-wrap:wrap;gap:4px;align-items:center;font-size:11.5px}
