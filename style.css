@@ -435,3 +435,8 @@ select{height:32px;padding:0 8px;border-radius:7px;border-width:1px;font-size:13
 .avhow-q{width:22px;height:22px;border-radius:50%;background:#0a8a4a;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex:none}
 .avhow-b{padding:8px 0 2px 30px;font-size:14px;line-height:1.5}.avhow-b ol{margin:6px 0;padding-left:20px}.avhow-b li{margin:5px 0}.avhow-b li .btn{margin-left:6px}.avhow-ok{color:#0a6b39;margin:6px 0 0}
 .rb-bids{margin:12px 0;padding:12px 14px;border:1px solid var(--line);border-radius:10px;display:flex;flex-direction:column;gap:8px}.rb-bids b{font-size:14px}
+
+/* посетители сайта */
+.bars.vb .barl{grid-template-columns:240px 1fr 110px}.vbh{margin:-2px 0 6px 250px;font-size:12px;color:var(--muted)}
+@media(max-width:700px){.bars.vb .barl{grid-template-columns:1fr auto}.bars.vb .barl>div{grid-column:1/-1;order:3}.vbh{margin:0 0 6px}}
+@media(max-width:700px){.grid4.vk{grid-template-columns:1fr 1fr}}
